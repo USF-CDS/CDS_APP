@@ -9,3 +9,4 @@ keras
 tensorflow
 youtube_transcript_api
 urllib3
+Flask-SQLAlchemy
