@@ -1,0 +1,11 @@
+Flask
+sklearn
+pandas
+numpy
+matplotlib
+collection
+nltk
+keras
+tensorflow
+youtube_transcript_api
+urllib3
