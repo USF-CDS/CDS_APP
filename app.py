@@ -33,7 +33,6 @@ def extract_video_id(url):
         if query.path[:3] == '/v/':
             return query.path.split('/')[2]
     return "video not on Youtube or Does not exist"
-
 def transcript(video_id):
     try:
         m = YouTubeTranscriptApi.get_transcript(video_id)
