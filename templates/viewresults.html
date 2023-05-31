@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset some default styles */
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #f0f0f0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header-content {
+      text-align: center;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .header-content img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Navigation styles */
+    nav {
+      background-color: #333;
+    }
+
+    ul {
+      padding: 10px 20px;
+      font-size: x-large;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      margin: 0 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      padding: 10px;
+    }
+
+    /* Corrected hover effect */
+    a:hover {
+      background-color: #555;
+    }
+
+    .active {
+      background-color: rgb(18, 190, 216);
+    }
+
+    /* Main content styles */
+    main {
+      padding-top: 5%;
+      padding-left: 25%;
+      padding-right: 25%;
+      text-align: left;
+    }
+
+    /* Footer styles */
+    .footer-content {
+      text-align: center;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    footer img {
+      max-height: 60px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+
+      /* Adjust header and footer for smaller screens */
+      header,
+      footer {
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      /* Adjust navigation for smaller screens */
+      ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+  <title>CDS Tableau</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <!-- Add your header content here -->
+      <img src="log-removebg-preview.png" alt="Header Image">
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="ee.html">Submission</a></li>
+      <li><a href="aboutcds.html">About CDS</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>These are your previous submissions:</h1>
+    {% if rows %}
+    <table style="border:1px solid black;">
+        <thead>
+            <tr>
+                <!-- <th>Student_id</th> -->
+                <th>Semester</th>
+                <th>Course</th>
+                <th>URL</th>
+                <th>Valid</th>
+                
+                <!-- Add more column headers as per your table structure -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <!-- <td>{{ row.student_id }}</td> -->
+                <td>{{ row.semester }}</td>
+                <td>{{ row.course }}</td>
+                <td>{{ row.url }}</td>
+                <td>{{ row.valid }}</td>
+                <!-- Add more columns as per your table structure -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <h2>{{ message }}</h2>
+    {% endif %}
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="log-removebg-preview.png" alt="Footer Image">
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('button1').addEventListener('click', function () {
+      window.location.href = "ee.html";
+    });
+
+    document.getElementById('button2').addEventListener('click', function () {
+      window.location.href = 'WBBS.html';
+    });
+  </script>
+</body>
+
+</html>
