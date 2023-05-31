@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CDS</title>
+  <style>
+    /* Header and Footer styles */
+    header, footer {
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img, footer img {
+      max-height: 80px;
+      max-width: 1000px;
+    }
+
+    .nav {
+      display: flex;
+    }
+
+    .nav a {
+      color: white;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: darkgreen;
+      min-width: 160px;
+      z-index: 1;
+      top: 100%;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Body styles */
+    body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .body {
+      flex: 1;
+      background-image: url('tt.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-container .button {
+      background-color: darkgreen;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div>
+      <img src="log-removebg-preview.png" alt="Logo">
+    </div>
+    <nav class="nav">
+      <a href="Index.html">Home</a>
+      <div class="dropdown">
+        <a href="#">Certification</a>
+        <div class="dropdown-content">
+          <a href="ee.html">New Submission</a>
+          <a href="#">View Old Submission</a>
+        </div>
+      </div>
+      <a href="#">About CDS</a>
+      <div class="dropdown">
+        <a href="#">Help</a>
+        <div class="dropdown-content">
+          <a href="#">HELP lab</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Body -->
+  <div class="body">
+    <h1>Webpage Launching Soon ,Thanks you for your patience</h1>
+    <h3 class="sub-head"></h3>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <img src="log-removebg-preview.png" alt="Logo">
+    </div>
+  </footer>
+</body>
+</html>
+
+

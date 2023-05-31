@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CDS SUBMISSION</title>
+  <style>
+    /* Header and Footer styles */
+    header, footer {
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img, footer img {
+      max-height: 80px;
+      max-width: 1000px;
+    }
+
+    .nav {
+      display: flex;
+    }
+
+    .nav a {
+      color: rgb(5, 1, 1);
+      margin-left: 10px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: darkgreen;
+      min-width: 160px;
+      z-index: 1;
+      top: 100%;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Body styles */
+    body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .body {
+      flex: 1;
+      background-image: url('tt.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: left;
+      margin : 30;
+      margin-bottom: 30px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    form select,
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form input[type="submit"] {
+      background-color: darkgreen;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+      padding: 15px 25px;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #006400;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div>
+      <img src="log-removebg-preview.png" alt="Logo">
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="ee.html">Submission</a>
+        
+      </div>
+      <a href="aboutcds.html">About CDS</a>
+      <div class="dropdown">
+        <a href="help.html">Help</a>
+        
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Body -->
+  <div class="body">
+    <h1>Tableau Assignment Submissions Details</h1>
+    <p>Please submit your CDS Tableau assignment details below. Please note that this form takes only one submission at a time.</p>
+    <form>
+      <label for="semester">Provide the semester in which you have completed this assignment</label>
+      <select id="semester" name="semester">
+        <option value="Fall 2018">Fall 2018</option>
+        <option value="Spring 2019">Spring 2019</option>
+        <option value="Fall 2019">Fall 2019</option>
+        <option value="Spring 2020">Spring 2020</option>
+        <option value="Fall 2020">Fall 2020</option>
+        <option value="Spring 2021">Spring 2021</option>
+        <option value="Fall 2021">Fall 2021</option>
+        <option value="Spring 2022">Spring 2022</option>
+        <option value="Fall 2022">Fall 2022</option>
+        <option value="Spring 2023">Spring 2023</option>
+      </select>
+      
+      <label for="uid">Please provide your UID</label>
+      <input type="text" id="uid" name="uid" required>
+      
+      <label for="course-code">Please provide the course code</label>
+      <select id="course-code" name="course-code">
+        <option value="Subject 1">Subject 1</option>
+        <option value="Subject 2">Subject 2</option>
+        <option value="Subject 3">Subject 3</option>
+      </select>
+      
+      <label for="professor">Name of Professor</label>
+      <input type="text" id="professor" name="professor" required>
+      
+      <label for="name">What is your name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Please provide your email that you will check regularly</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="course-other">If your course was "Other", Please input Course code</label>
+      <input type="text" id="course-other" name="course-other">
+      
+      <label for="submission-link">Provide your submission link (Only ONE Link per submission)</label>
+      <input type="text" id="submission-link" name="submission-link" required>
+      
+      <label for="major">What is your major</label>
+      <input type="text" id="major" name="major" required>
+      
+      <label for="comments">Do you have any comments regarding the course</label>
+      <textarea id="comments" name="comments"></textarea>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <img src="log-removebg-preview.png" alt="Logo">
+    </div>
+  </footer>
+</body>
+</html>

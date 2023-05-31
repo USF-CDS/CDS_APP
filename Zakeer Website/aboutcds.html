@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset some default styles */
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #f0f0f0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header-content {
+      text-align: center;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .header-content img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Navigation styles */
+    nav {
+      background-color: #333;
+    }
+
+    ul {
+      padding: 10px 20px;
+      font-size: x-large;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      margin: 0 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      padding: 10px;
+    }
+
+    /* Corrected hover effect */
+    a:hover {
+      background-color: #555;
+    }
+
+    .active {
+      background-color: rgb(18, 190, 216);
+    }
+
+    /* Main content styles */
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Footer styles */
+    .footer-content {
+      text-align: center;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    footer img {
+      max-height: 60px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+
+      /* Adjust header and footer for smaller screens */
+      header,
+      footer {
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      /* Adjust navigation for smaller screens */
+      ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+  <title>ABOUT CDS</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <!-- Add your header content here -->
+      <img src="log-removebg-preview.png" alt="Header Image">
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="ee.html">Submission</a></li>
+      <li><a href="aboutcds.html" class="active" >About CDS</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 style="font-family: cursive;">Citizen Data Science Certificate</h1>
+    <!-- <p style="font-size: 25px;text-align: justify; font-family: Arial, sans-serif;"> -->
+    <p style="font-size: 25px; font-family: Arial, sans-serif;">Tableau is the fastest-growing data
+      visualization tool in the world. Due to its simplicity, versatility, and sheer power Tableau is the leading
+      business intelligence tool in the industry. Employers are seeking out hires who can use this tool to help derive
+      insights from data that can solve business challenges.
+    </p>
+
+    <p style="font-size: 25px; font-family: Arial, sans-serif;">To satisfy the current market needs,
+      USF Muma College of Business, in association with Tableau, has created a Citizen Data Science Certificate Program
+      that allows any student who earns a degree from the college a chance to graduate with this additional
+      certification.
+    </p>
+
+    <p style="font-size: 25px;font-family: Arial, sans-serif;">Since 2018, the USF Muma College of
+      Business has embedded Tableau’s visualization platform into several courses in its undergraduate curriculum. Each
+      of these courses has a Tableau exercise where students analyze a dataset, produce visualizations/ dashboards, and
+      tell a story that emerges. Every assignment ends with a short video produced by the student, in which the student
+      shows how Tableau can be used for a dataset in that course to generate important business insights.
+    </p>
+
+    <P style="font-size: 25px; font-family: Arial, sans-serif;">YOU CAN SUBMIT A NEW VIDEO AND CHECK YOUR PREVIOUS
+      SUBMISSIONS BELOW</P>
+    <button style="font-size: 18px; padding: 10px 20px; font-family: cursive;" id="button1">New Submission</button>
+    <button style="font-size: 18px; padding: 10px 20px; font-family: cursive;" id="button2">Check your
+      submissions</button>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="log-removebg-preview.png" alt="Footer Image">
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('button1').addEventListener('click', function () {
+      window.location.href = "ee.html";
+    });
+
+    document.getElementById('button2').addEventListener('click', function () {
+      window.location.href = 'WBBS.html';
+    });
+  </script>
+</body>
+
+</html>
